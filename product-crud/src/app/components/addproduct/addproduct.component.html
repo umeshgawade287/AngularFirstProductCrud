@@ -1,0 +1,26 @@
+
+<div  class="container-fluid mt-4">
+<h3 class="text-success"><strong>Create New Product</strong></h3>
+<form >
+    <div class="form-group">
+        <label for=""> Name</label>
+        <input type="text" class="form-control" #name style="width:40% ! important" maxlength="100" />
+    </div>
+    <div class="form-group">
+        <label for=""> Description</label>
+        <input type="text" class="form-control" #description  style="width:50% ! important"  maxlength="100"/>
+    </div>        
+    <div class="form-group">
+        <label for=""> Price</label>
+        <input type="text" class="form-control" #price  style="width:20% ! important" maxlength="20" />
+    </div>
+    <div class="form-group">
+        <label for=""> Quantity</label>
+        <input type="number" class="form-control" #quantity  style="width:10% ! important"  maxlength="20" />
+    </div>
+    <div class="form-group mt-2">
+        <button (click)="addproduct(name.value,description.value,price.value,quantity.value)" style="display:inline-block;" class="btn btn-success mr-2">Create</button>
+        <button routerLink="/" style="display:inline-block" class="btn btn-danger">Cancel</button>
+    </div>
+</form>
+</div>
